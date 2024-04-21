@@ -1,0 +1,35 @@
+Bienvenu sur l'application qui implémente les algorithmes de la théorie des graphes.
+Pour exécuter la majorité des algorithmes vous devez d'abord importer le graphe:
+-sous forme de matrice d'adjascence:
+	-saisir dans la console
+	-importer un fichier texte contenant la matrice
+	Exemple du contenu du fichier:
+5 10 0 0 0 0 <-- 1ere case c'est le nombre de sommet et 2e case le nombre d'arcs ou d'arêtes
+0 0 1 0 1 0
+0 1 0 1 0 0
+0 0 1 0 1 1
+0 1 0 1 0 0
+0 0 0 1 0 0
+Si il y'a un arc ou une arête entre 2 sommets i et j alors la case (i,j) de la matrice est  égale, sinon 0
+-sous forme des tableaux FS et APS
+Exemple:
+12 1 2 3 0 1 2 3 0 1 2 3 0 <--FS
+3 1 5 9 <-- APS
+La première case de FS contient le nombre d'arcs/arêtes plus le nombre de sommet du graphe
+-sous forme d'arcs/arêtes
+Exemple:
+8 <-- nombre de sommets du graphe
+7 <-- nombre d'arcs/arêtes du graphe
+1 3 1 <-- 1e arc/arête
+2 3 2 <-- 2e arc/arête
+3 5 3
+3 6 1
+3 4 2
+4 8 3 <-- avant dernière arc/arête
+4 7 3 <-- dernière arc/arête
+Chaque ligne contient trois valeurs qui représentent respectivement la 1ère extrémité de l'arc/arête, la 2e extrémité de l'arc/arête et le poids(ou le coût ou la durée de tache dans le cas de l'ordonnancement) de l'arc/arête.
+
+Remarque: Pour exécuter l'algorithme de décodage de prufer, vous n'aurez pas besoin d'importer un graphe. Il suffit d'importer un fichier texte contenant le codage de prufer du graphe qui vous souhaitez décoder.
+Exemple du contenu du fichier:
+6 <-- le nombre de valeur dans le tableau de codage
+3 3 3 3 4 4 <-- les valeurs du tableau de tableau de codage séparée par des espaces.
